@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +9,22 @@
 </head>
 <body>
 
-
 	<h1>Superkvíz</h1>
+  <div class="kviz">
+    <h2 id="poradi">Číslo otázky</h2>
+    <h3 id="otazka">Otázka</h3>
+    <div class="obsah">
+      <div id="obraz"></div>
+      <div id="moznosti"></div>
+    </div>
+  </div>
+  <div class="vysledek skryty">
+    <h2>Tvoje hodnocení</h2>
+    <div class="vysledek__obsah"></div>
+    <h2 class="uspesnost"></h2>
+  </div>
 
-	<!-- přidat <div> pro kvíz -->
-	<!-- do něj přidat <div>y pro samotné držení otázky -->
-	<!-- také nezapomenout na <div> pro výsledek a hodnocení -->
-
-	<script src="kviz.js"></script>
+	<script src="main.js"></script>
 
 </body>
 </html>
