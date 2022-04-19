@@ -152,16 +152,7 @@ function vyhodnoceni() {
   })
 
   // sourhnné hodnocení:
-  let vysledek;
-  if (pocetSpravnychOdpovedi == 3) {
-    vysledek = "Správně 3 ze 3 otázek. Úspěšnost 100 %."
-  } else if (pocetSpravnychOdpovedi == 2) {
-    vysledek = "Správně 2 ze 3 otázek. Úspěšnost 66 %."
-  } else if (pocetSpravnychOdpovedi == 1) {
-    vysledek = "Správně 1 ze 3 otázek. Úspěšnost 33 %."
-  } else {
-    vysledek = "Správně 0 ze 3 otázek. Úspěšnost 0 %"
-  }
+  let vysledek = `Správně ${pocetSpravnychOdpovedi} ze ${otazky.length} otázek. Úspěšnost ${Math.floor(pocetSpravnychOdpovedi / otazky.length * 100)} %.`
   // vypropagování souhrnného hodnocení:
   let uspesnost = document.querySelector(".uspesnost");
   uspesnost.textContent = vysledek;
